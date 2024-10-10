@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Container, Header, Menu, Segment, Statistic, Icon} from "semantic-ui-react";
+import {Container, Header, Menu, Segment, Statistic, Icon, StatisticLabel} from "semantic-ui-react";
 import {useNavigate} from "react-router-dom";
 import Charities from "./charities"; 
 import MyDonations from "./mydonations";
@@ -32,8 +32,9 @@ const Home = () => {
       <Container style={{flex: 1, padding: "20px", margin: 0}}>
         <Header as="h1" style={{padding: "10px 0"}}>DonateChain</Header>
         <Statistic style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-          <Statistic.Value>$XXXXX.XX</Statistic.Value>
+          <Statistic.Value>SGD XXXXX.XX</Statistic.Value>
           <Statistic.Label>Contributed to Charity</Statistic.Label>
+          <Statistic.Label>1 ETH equivalent to SGD 3131.09</Statistic.Label>
         </Statistic>
         <Segment>
           {activeItem === "myDonations" && <MyDonations/>}
